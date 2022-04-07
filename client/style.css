@@ -1,4 +1,13 @@
 /* *********************************************************************************** */
+/* Fonts  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+
+/* *********************************************************************************** */
 /* Generic  */
 
 #newPostSection,
@@ -13,6 +22,12 @@
 .individualContainer {
   background-color: #f8f9fa;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  font-family: poppins, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background-color: #38aecc;
 }
 
 .row {
@@ -25,6 +40,7 @@
 .navbar {
   padding: 10px;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);
+  background-color: #ffb622;
 }
 
 .navbar-brand {
@@ -41,6 +57,16 @@
   left: 50%;
   position: absolute;
   transform: translate(-50%);
+}
+
+.btn {
+
+  color: #ffffff;
+  background-color: #38aecc;
+}
+
+.btn:hover {
+  background-color: #ffb622;
 }
 
 /* Hamburger Button */
@@ -141,12 +167,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 420px;
+  height: 500px;
+  margin: 0px 60px;
 }
 
 #heroText {
   align-self: center;
   padding-top: 100px;
+  margin: 0px 120px;
+  font-family: poppins, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #heroTitle,
@@ -155,6 +184,7 @@
   color: #000;
   margin: auto;
   text-align: center;
+  font-family: lato, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #heroTitle {
@@ -168,6 +198,17 @@
 /* *********************************************************************************** */
 /* New post section  */
 
+.form-label{
+  margin-top: 15px;
+  font-size: 24px;
+  font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#newPostContainer{
+  background-color: white;
+  border-radius: 10px;
+}
+
 #newPostsTitle {
   padding-top: 20px;
   text-align: center;
@@ -175,6 +216,14 @@
 
 #newPostContainer h5 {
   margin-top: 0.75rem;
+}
+
+#postTitleContent{
+  font-family: lato, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#postBodyContent{
+  font-family: lato, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 #postTitleContent::placeholder,
@@ -274,10 +323,14 @@
 /* Gif Menu */
 /* ********** */
 
+#createPostBtn {
+  background-color: #ffb622;
+  color: black;
+}
 
 #createPostBtn:hover {
-  color: #0d6efd;
-  background-color: transparent;
+  color: white;
+  background-color: #38aecc;
 }
 /* *********************************************************************************** */
 /* Top post section  */
@@ -462,6 +515,12 @@
 /* Footer section  */
 
 /* For line breaker */
+.foot{
+  background-color: #007ca5
+}
+
+
+
 .h {
   width: 100%;
   height: 2px;
@@ -471,7 +530,7 @@
 }
 
 #copyrightContainer {
-  background-color: #d7d7d7;
+  background-color: #005673;
 }
 
 #copyrightContainer a:hover {
@@ -481,6 +540,7 @@
 
 #credits {
   float: left;
+  color: white;
 }
 
 #credits a {
@@ -489,6 +549,10 @@
 
 #termsAndConditions {
   color: black;
+}
+
+#socialMediaTitle{
+  color: #ffffff;
 }
 
 @media screen and (min-width: 992px) {
